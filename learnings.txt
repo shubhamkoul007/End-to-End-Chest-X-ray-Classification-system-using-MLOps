@@ -1,0 +1,27 @@
+1. So init will basically say thet the folder is a repo. It may also say in the 
+local (understand it)
+2. In requirements.py he had -e at the end which meant run setup as local. 
+3. Setup.py will install everything as local package, it (import setup tools ) will 
+look for init.py in folder at same level and where ever init.py is present, that folder 
+is local package and setup will be installed. 
+4. Init.py is also called constructor file. If it is in src/cnnClassifier and I 
+write logger inside init.py, I can directly access it like from src/cnnClassifier 
+import logger  or from cnnClassifier import logger as it is in constructor.
+5. Yaml file is standard to have files like params.yaml , config.yaml
+6. confixBox(d2) types converts dictionary to easy access type. Like 
+normal d2[‘key’] = value. d2=configbox[d2] , now d2.key = value , looks much cleaner. 
+7. From ensure import ensure_annotations ensure that the parameter for ensured function 
+are passed with correct data type else it will give error. 
+8. 
+
+
+Project pipeline 
+
+1. First we made repo in GitHub. 
+2. Then cloned it in our machine. 
+3. Then ran a template.py to have folders and files structure like we want. 
+4. Then we made a requirements.py and setup.py, ran requirements.py which also 
+ran setup.py and got requirements package in our src. 
+5. Then we added logger in init inside src/cnnClassifier. 
+6. We made a main (at repo level) to test the above logger.
+7. Then we made common.py inside utils folder to have common functions.
