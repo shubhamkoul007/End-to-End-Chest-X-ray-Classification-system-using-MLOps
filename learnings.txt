@@ -13,6 +13,18 @@ normal d2[‘key’] = value. d2=configbox[d2] , now d2.key = value , looks much
 7. From ensure import ensure_annotations ensure that the parameter for ensured function 
 are passed with correct data type else it will give error. 
 8. 
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  above is format of a yaml file - data_ingestion- this is key, root_dir - this is value.
+  then root_dir is key , artifacts/data_ingestion - this is it's value. 
+9. entity is class like root directory , url . entity can be called as return type of a
+function. 
+10. @dataclass(frozen == true) - > not anything other then the mentioned parameters 
+should be returned as frozen is true. 
+11. dataclass is a kind of class where you can define
+class without writing any kind of self.
+12. gitignore is very useful. I added artifacts/* in gitignore due to which commits are
+not going to track changes artifacts, which is good. 
 
 
 Project pipeline 
@@ -25,3 +37,7 @@ ran setup.py and got requirements package in our src.
 5. Then we added logger in init inside src/cnnClassifier. 
 6. We made a main (at repo level) to test the above logger.
 7. Then we made common.py inside utils folder to have common functions.
+
+points - 
+
+1. Ingestion can be a good class refresher. 
