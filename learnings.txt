@@ -37,6 +37,9 @@ ran setup.py and got requirements package in our src.
 5. Then we added logger in init inside src/cnnClassifier. 
 6. We made a main (at repo level) to test the above logger.
 7. Then we made common.py inside utils folder to have common functions.
+8. then we made 1st part, data ingestion. 
+9. Second part have base model, train base model on our data, last few fc layers only. 
+
 
 points - 
 
