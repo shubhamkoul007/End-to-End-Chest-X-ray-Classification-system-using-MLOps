@@ -41,6 +41,10 @@ ran setup.py and got requirements package in our src.
 9. Second part have base model, prepare base model.
 10. Next part is train base model on our data,  last few fc layers only. 
 11. Get mlflow uri.
+12. model evaluation and tracking via mlflow added. 
+13. added dvc to do pipeline tracking and not rerunning the pipeline when there is no 
+change(kinda like repair run in databricks). dvc dag is cool to see dependencies. 
+14.
 
 
 points - 
